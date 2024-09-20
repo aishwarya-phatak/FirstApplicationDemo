@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class DashBoardActivity extends AppCompatActivity {
 
     LinearLayout linearLayout;
@@ -35,7 +34,7 @@ public class DashBoardActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT
         );
-
+        
         linearLayout.setLayoutParams(layoutParams);
 
         ViewGroup.LayoutParams layoutParamsForViews = new ViewGroup.LayoutParams(
@@ -81,7 +80,7 @@ public class DashBoardActivity extends AppCompatActivity {
                     (passwordEditText.getText().toString().equals("bitcode@1234"))){
                 Toast.makeText(DashBoardActivity.this, "Login Success", Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(DashBoardActivity.this, "Login Falied", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DashBoardActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
             }
         }
     }
