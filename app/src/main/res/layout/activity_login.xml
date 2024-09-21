@@ -8,13 +8,19 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/txtStudentName"
+        style="@style/custom_Style_1"
+        android:text="Android Batch '24"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
         android:id="@+id/txtWelcomeMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/white"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:textColor="@color/blue"
         android:textSize="30sp" />
 
@@ -25,7 +31,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Enter the username"
+        android:hint="@string/enter_the_username"
         android:textSize="30sp" />
 
     <EditText
@@ -35,7 +41,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Enter the password"
+        android:hint="@string/enter_the_password"
         android:inputType="textPassword"
         android:textSize="30sp" />
 
@@ -47,7 +53,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/blue"
         android:gravity="center"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/white" />
 
 </LinearLayout>
